@@ -40,7 +40,7 @@ public class DBUtilAnno {
                         "characterEncoding=%s" +
                         "&useSSL=%b" +
                         "&allowPublicKeyRetrieval=true" +
-                        "&serverTimeZone=Asia/Shanghai",
+                        "&serverTimeZone=%s",
                 ip,port,database,encoding,useSSL, serverTimeZone);
         return DriverManager.getConnection(url,loginName,password);
     }
